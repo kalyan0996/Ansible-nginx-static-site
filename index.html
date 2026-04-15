@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Superbikes & Supercars</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #0f0f0f;
+    color: #fff;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: rgba(0,0,0,0.7);
+}
+
+nav h2 {
+    color: #ff4d4d;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    height: 90vh;
+    background: url('https://images.unsplash.com/photo-1549924231-f129b911e442') no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    background: rgba(0,0,0,0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Sections */
+.section {
+    padding: 50px;
+    text-align: center;
+}
+
+.section h2 {
+    margin-bottom: 30px;
+    color: #ff4d4d;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    background: #1c1c1c;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 15px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2>🔥 Speed World</h2>
+    <div>
+        <a href="#">Home</a>
+        <a href="#">Bikes</a>
+        <a href="#">Cars</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <h1>Superbikes & Supercars</h1>
+</section>
+
+<section class="section">
+    <h2>🏍️ Superbikes</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1609710228159-0fa9bd7c0827">
+            <h3>Yamaha R1</h3>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1558980664-10ea292d6a9c">
+            <h3>Kawasaki Ninja H2</h3>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1611242320536-f12d3541249b">
+            <h3>Ducati Panigale V4</h3>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <h2>🚗 Supercars</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1542362567-b07e54358753">
+            <h3>Lamborghini Aventador</h3>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70">
+            <h3>Ferrari 488</h3>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7">
+            <h3>Bugatti Chiron</h3>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Speed World | Deployed with Ansible 🚀</p>
+</footer>
+
+</body>
+</html>
